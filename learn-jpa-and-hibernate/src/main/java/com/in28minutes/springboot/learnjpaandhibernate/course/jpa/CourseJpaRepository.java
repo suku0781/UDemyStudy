@@ -18,7 +18,7 @@ public class CourseJpaRepository {
     }
 
     // select
-    public Course selectById(long id) {
+    public Course findById(long id) {
         return entityManager.find(Course.class, id);
 
     }
